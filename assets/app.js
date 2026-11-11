@@ -329,7 +329,7 @@
   }
   function viewReviewList() {
     setTab('tekrar');
-    let h = `<h1>Genel Tekrar</h1><p class="lead">${md(COURSE.reviewLead || '')}</p>`;
+    let h = `<h1>Genel Tekrar${COURSE.date ? ` <span class="date">${esc(COURSE.date)}</span>` : ''}</h1><p class="lead">${md(COURSE.reviewLead || '')}</p>`;
     if (COURSE.hocaLink) h += `<p><a class="btn" href="${COURSE.hocaLink.href}">${md(COURSE.hocaLink.text)}</a></p>`;
     h += `<h2>Önce tuzaklar</h2><div class="card"><ul class="traps">${TRAPS.map(t => `<li>${md(t.t)}${t.topic && topicById[t.topic] ? ` <a href="#tekrar/${t.topic}">${esc(topicById[t.topic].title)} →</a>` : ''}</li>`).join('')}</ul></div>`;
     h += `<h2>Konular</h2><div class="tlist">${TOPICS.map(t => `<a href="#tekrar/${t.id}"><span class="n">${t.no}</span><span><b>${md(t.title)}</b>${t.star ? ' <span class="star">★ ' + esc(t.star) + '</span>' : ''}<span class="s">${md(t.src || '')}</span></span></a>`).join('')}</div>`;

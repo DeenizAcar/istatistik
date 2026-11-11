@@ -56,6 +56,12 @@ b { font-weight: 650; }
   display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
 }
 .brand { font-weight: 700; margin-right: auto; text-decoration: none; color: var(--fg); }
+.date {
+  display: inline-block; font-size: .58em; font-weight: 600; line-height: 1.4; vertical-align: middle;
+  color: var(--accent); background: var(--accent-soft);
+  border-radius: 6px; padding: 1px 6px; margin-left: 6px; white-space: nowrap;
+}
+.brand .date { font-size: .7em; }
 .tabs { display: flex; gap: 4px; }
 .tabs a, .top .btn-s {
   text-decoration: none; color: var(--fg); padding: 6px 12px; border-radius: 8px;

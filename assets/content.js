@@ -5,6 +5,7 @@ const R = String.raw;
 window.COURSE = {
   id: 'istatistik', lang: 'none',
   title: 'İstatistik ve Olasılık',
+  date: '27.07',
   storeKey: 'istvize-best', seenKey: 'istvize-seen',
   reviewLead: 'Defterdeki konuların kısa özeti. Önce tuzak listesine bak, sonra konuları sırayla geç. ★ işaretli konular hocanın "sınavda çıkacak" dediği soru tiplerinden.',
   testLead: 'Önce hocanın "sınavda çıkacak" dediği 3 soruyu çöz, sonra deneme vizelerine geç. Konu testleri anında kontrol eder.',
