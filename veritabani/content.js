@@ -1,9 +1,9 @@
-/* Nazo · Veritabanı Teknolojileri · konu özetleri. tools/build.py ile üretildi, elle düzenleme. */
+/* Veritabanı Teknolojileri · konu özetleri. tools/build.py ile üretildi, elle düzenleme. */
 window.COURSE = {
- "id": "nazo",
+ "id": "veritabani",
  "lang": "sql",
- "storeKey": "nazo-best",
- "themeKey": "nazo-theme",
+ "storeKey": "veritabani-best",
+ "themeKey": "veritabani-theme",
  "date": "27.07",
  "reviewTitle": "Genel Tekrar",
  "reviewLead": "Hocanın 4 haftalık notu (giriş, ER, DDL, INSERT), **Festival planlama sorusu** ve çalışma kitapçığından 10 konu. Her konuda kısa özet, tablo, SQL örneği, **Tuzak** ve **Sınavda** kutuları var. SQL çıktıları sqlite ile çalıştırılarak yazıldı.",

@@ -159,7 +159,7 @@ if errors:
 # ---------- 4. yaz ----------
 J = lambda x: json.dumps(x, ensure_ascii=False, indent=1)
 course = {
-  'id': 'nazo', 'lang': 'sql', 'storeKey': 'nazo-best', 'themeKey': 'nazo-theme',
+  'id': 'veritabani', 'lang': 'sql', 'storeKey': 'veritabani-best', 'themeKey': 'veritabani-theme',
   'date': '27.07',
   'reviewTitle': 'Genel Tekrar',
   'reviewLead': 'Hocanın 4 haftalık notu (giriş, ER, DDL, INSERT), **Festival planlama sorusu** ve çalışma kitapçığından 10 konu. Her konuda kısa özet, tablo, SQL örneği, **Tuzak** ve **Sınavda** kutuları var. SQL çıktıları sqlite ile çalıştırılarak yazıldı.',
@@ -179,7 +179,7 @@ course = {
 fmt = [{'range': 'Soru 1–16', 'what': 'Çoktan seçmeli', 'big': '80', 'small': 'puan (16 × 5)'},
        {'range': 'Soru 17–20', 'what': 'Boşluk doldurma', 'big': '20', 'small': 'puan (4 × 5)'}]
 open(os.path.join(dest, 'content.js'), 'w', encoding='utf8', newline='\n').write(
-  '/* Nazo · Veritabanı Teknolojileri · konu özetleri. tools/build.py ile üretildi, elle düzenleme. */\n'
+  '/* Veritabanı Teknolojileri · konu özetleri. tools/build.py ile üretildi, elle düzenleme. */\n'
   'window.COURSE = ' + J(course) + ';\nwindow.EXAM_FORMAT = ' + J(fmt) + ';\nwindow.TRAPS = ' + J(TRAPS) +
   ';\nwindow.TOPICS = ' + J(TOPICS) + ';\nwindow.TOPIC_RULES = ' + J(TOPIC_RULES) + ';\n')
 open(os.path.join(dest, 'questions.js'), 'w', encoding='utf8', newline='\n').write(

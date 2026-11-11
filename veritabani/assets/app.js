@@ -806,7 +806,7 @@
     if (link && current === 'tekrar') {
       e.preventDefault();
       var href = link.getAttribute('href');
-      history.replaceState(null, '', href);
+      history.replaceState(null, '', location.href.split('#')[0] + href);
       scrollToSection(href.split('/')[1]);
     }
   });
@@ -859,7 +859,7 @@
       window.scrollTo(0, 0);
       return;
     }
-    if (C.noReview) { location.replace('#test'); return; }
+    if (C.noReview) { location.replace(location.href.split('#')[0] + '#test'); return; }
     setTab('tekrar');
     S = null;
     if (current !== 'tekrar') {
